@@ -16,7 +16,8 @@
     "build:dev": "webpack --bail --mode=development && webpack --bail -d --mode=development",
     "watch": "webpack --watch -d",
     "release": "release",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "babel-core": "^6.18.0",
