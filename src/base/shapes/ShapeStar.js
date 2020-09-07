@@ -19,11 +19,11 @@ import ShapeParent from './ShapeParent';
 
 class ShapeStar extends ShapeParent {
   _createInnerGeometry (radius, curveSegments) {
-    const polyStr = '50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180'
+    const polyStr = '50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180';
 
     // X-offset: -21, Y-offset: -21 puts the center of the shape at (0,0), but visual since it is
     // a triangle it doesn't look quite right vertically, hence the Y-offset of -17.
-    //const newShapes = ShapesFactory.getShapeFromPolyPointsArray(polyPath, ',', -50, -17);
+    // const newShapes = ShapesFactory.getShapeFromPolyPointsArray(polyPath, ',', -50, -17);
 
     const newShapes = ShapesFactory.getShapeFromPolyPoints(polyStr, ' ', -50, -170);
 
